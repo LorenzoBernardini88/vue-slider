@@ -49,7 +49,7 @@ let app = new Vue({
         },
         imgNext : function(){
             this.corrente++;
-            if(this.corrente > this.oggetti.length) {
+            if(this.corrente == this.oggetti.length) {
                 this.corrente = 0 ; 
             }
         },
