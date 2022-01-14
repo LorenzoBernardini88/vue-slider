@@ -34,9 +34,28 @@ let app = new Vue({
         
     },
     methods :{
-        imgActive : function(imgIdice){
-            if(imgIdice == this.corrente){
+        
+        imgActive : function(imgIndice){
+            if(imgIndice == this.corrente){
                 return 'active'
+            }
+            return ''
+        },
+        imgPrev : function(){
+            this.corrente--;
+            if(this.corrente < 0){
+                this.corrente = 4;
+            }
+        },
+        imgNext : function(){
+            this.corrente++;
+            if(this.corrente > this.oggetti.length) {
+                this.corrente = 0 ; 
+            }
+        },
+        borderActive : function(imgIndice){
+            if(imgIndice == this.corrente){
+                return 'border_active'
             }
             return ''
         }
