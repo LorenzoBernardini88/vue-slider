@@ -1,27 +1,46 @@
-const items = [
-    'img/01.jpg',
-    'img/02.jpg',
-    'img/03.jpg',
-    'img/04.jpg',
-    'img/05.jpg'
-];
+let app = new Vue({
 
-const title = [
-    'Svezia',
-    'Svizzera',
-    'Gran Bretagna',
-    'Germania',
-    'Paradise'
+    el: '#myapp',
+    
+}),
+
+
+const dataElementi =[
+    {
+        'img':'assets/img/01.jpg',
+        'title':'Svezia',
+        'text':'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.'
+    },
+    {
+        'img':'assets/img/02.jpg',
+        'title':'Svizzera',
+        'text':'Lorem ipsum'
+    },
+    {
+        'img':'assets/img/03.jpg',
+        'title':'Gran Bretagna',
+        'text':'Lorem ipsum, dolor sit amet consectetur adipisicing elit.'
+    },
+    {
+        'img':'assets/img/04.jpg',
+        'title':'Germania',
+        'text':'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
+    },
+    {
+        'img':'assets/img/05.jpg',
+        'title':'Paradise',
+        'text':'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
+    },
 ]
 
-const text = [
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
-    'Lorem ipsum',
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
-    'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
-]
 
+
+
+
+
+
+
+/*
 // Seleziono contenitore sistra e destra
 const rightImagesContainer = document.querySelector('.ms_container2');
 const leftImagesContainer = document.querySelector('.ms_anteprima');
@@ -92,7 +111,7 @@ prev.addEventListener('click',function(){
     imgBorder = document.getElementById('dx_img_'+idIncrem);
     imgBorder.classList.add('border_active');
     
-})
+}) /*
 
 
 
