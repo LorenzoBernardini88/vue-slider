@@ -58,6 +58,9 @@ let app = new Vue({
                 return 'border_active'
             }
             return ''
+        },
+        imgView : function(indiceView){
+            this.corrente = indiceView
         }
     } 
     
