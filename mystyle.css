@@ -15,7 +15,6 @@ body{
 }
 .ms_left_img{
     position: relative;
-    display: none;
     height: 100%;
 }
 .ms_left_img img{
