@@ -19,15 +19,6 @@
                 <div v-for="(elementi,indice) in oggetti" class=" ms_left_img ">
                     <img :src="elementi.img" alt="">
                 </div>
-
-
-                
-
-                
-
-
-
-            
             </div>
             
             
@@ -35,6 +26,10 @@
             <div class="col-2  p-0 ms_slider">
                 
                 <div class="row flex-column ms_container2 ">
+                    <div v-for="(elementi,indice) in oggetti" class="col p-0 ms_img_cont">
+                        <img :src="elementi.img" alt="">
+
+                    </div>
 
                     <a class="arrow" id="up" href="#"><i class="bi bi-arrow-up-circle"></i></a>
                     <a class="arrow" id="down" href="#"><i class="bi bi-arrow-down-circle"></i></a>
