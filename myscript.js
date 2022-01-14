@@ -2,10 +2,10 @@ let app = new Vue({
 
     el: '#myapp',
     
-}),
+})
 
 
-const dataElementi =[
+const Elementi = [
     {
         'img':'assets/img/01.jpg',
         'title':'Svezia',
@@ -30,8 +30,8 @@ const dataElementi =[
         'img':'assets/img/05.jpg',
         'title':'Paradise',
         'text':'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
-    },
-]
+    }
+];
 
 
 
@@ -111,11 +111,4 @@ prev.addEventListener('click',function(){
     imgBorder = document.getElementById('dx_img_'+idIncrem);
     imgBorder.classList.add('border_active');
     
-}) /*
-
-
-
-
-
-
-
+}) */
