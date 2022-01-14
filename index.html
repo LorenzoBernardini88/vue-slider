@@ -17,6 +17,10 @@
 
             <div  class="col-10 ms_anteprima " >
                 <div v-for="(elementi,indice) in oggetti" class=" ms_left_img ">
+                    <div class="img_testo">
+                        <h1>{{elementi.title}}</h1>
+                        <p>{{elementi.text}}</p>
+                    </div>
                     <img :src="elementi.img" alt="">
                 </div>
             </div>
@@ -33,9 +37,7 @@
 
                     <a class="arrow" id="up" href="#"><i class="bi bi-arrow-up-circle"></i></a>
                     <a class="arrow" id="down" href="#"><i class="bi bi-arrow-down-circle"></i></a>
-
                 
-
                 </div>
                 
             </div>
