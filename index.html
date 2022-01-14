@@ -16,7 +16,7 @@
         <div class="row ms_container " >
 
             <div  class="col-10 ms_anteprima " >
-                <div v-for="(elementi,indice) in oggetti" class=" ms_left_img ">
+                <div v-for="(elementi,indice) in oggetti" class=" ms_left_img " :class = 'imgActive(indice)' >
                     <div class="img_testo">
                         <h1>{{elementi.title}}</h1>
                         <p>{{elementi.text}}</p>

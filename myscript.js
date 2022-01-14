@@ -2,6 +2,8 @@ let app = new Vue({
 
     el: '#myapp',
     data : {
+        corrente:0,
+
         oggetti : [
             {
                 'img':'img/01.jpg',
@@ -30,7 +32,16 @@ let app = new Vue({
             }
         ]
         
-    }
+    },
+    methods :{
+        imgActive : function(imgIdice){
+            if(imgIdice == this.corrente){
+                return 'active'
+            }
+            return ''
+        }
+    } 
+    
 })
 
 
