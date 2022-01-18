@@ -3,7 +3,7 @@ let app = new Vue({
     el: '#myapp',
     data : {
         corrente:0,
-
+        scorri : null,
         oggetti : [
             {
                 'img':'img/01.jpg',
@@ -33,6 +33,9 @@ let app = new Vue({
         ]
         
     },
+    mounted: function(){
+        this.imgIntervall();
+    },
     methods :{
         
         imgActive : function(imgIndice){
@@ -61,18 +64,18 @@ let app = new Vue({
         },
         imgView : function(indiceView){
             this.corrente = indiceView
+        },
+        imgIntervall : function(){
+            this.scorri = setInterval(this.imgNext,3000);
+        },
+        stopIntervall : function(){
+            clearInterval(this.scorri);
+            this.scorri= null;
         }
+
     } 
     
 })
-
-
-
-
-
-
-
-
 
 
 /*
